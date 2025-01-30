@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Check</title>
+</head>
+<body>
+
+    <h1>Marks Check</h1>
+    
+    <label for="marks">Enter your marks: </label>
+    <input type="number" id="marks" placeholder="Enter marks" />
+    
+    <button onclick="competent()">Check</button>
+    <p id="result"></p>
+    
+    <script>
+        // Function to check if the person is an competent
+        function checkMarks() {
+            // Get the value entered by the user
+            let age = document.getElementById("result").value;  
+            
+            // Get the result paragraph element
+            let result = document.getElementById("result");
+            
+            // Check if the marks is greater than 70
+            if (marks >=70) {
+                result.textContent = "You are competent.";
+            } else if (marks <70 ) {
+                result.textContent = "You are not competent.";
+            } else (marks <50){
+                resurt.textContent ="Reapet.";
+                result.textContent = "Please enter a valid marks.";
+            }
+        }
+    </script>
+ 
